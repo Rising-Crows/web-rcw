@@ -1,0 +1,34 @@
+{{ define "nav-items" }}
+<li class="nav-item">
+  <a class="nav-link" href="/">Home</a>
+</li>
+<li class="nav-item active">
+  <a class="nav-link" href="/lol">League of Legends <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/crowscrew">Crows Crew</a>
+</li>
+{{ end }}
+
+{{ define "main" }}
+<div class="container">
+  <div class="justify-content-center align-items-center text-center">
+    <img id="logo" src="/assets/img/rising-crows.png" />
+  </div>
+  <div class="justify-content-center align-items-center text-center mt-4 mb-4">
+    <h1>League of Legends Squad</h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="justify-content-center align-items-center text-center">   
+    <ul id="streamers">
+      <li><a target="_blank" href="https://euw.op.gg/summoner/userName=rcw+zenitochi">Zenitochi (top)</a></li>
+      <li><a target="_blank" href="https://euw.op.gg/summoner/userName=RCW%20ZZviente0">ZZviente0 (jungle)</a></li>
+      <li><a target="_blank" href="https://euw.op.gg/summoner/userName=rcw+motorrabo">Motorrabo (mid)</a></li>
+      <li><a target="_blank" href="https://euw.op.gg/summoner/userName=rcw+stoned">StoneD (adc)</a></li>
+      <li><a target="_blank" href="https://euw.op.gg/summoner/userName=RCW+Kappa">Kappa (support)</a></li>
+    </ul>
+  </div>
+</div>
+{{ end }}

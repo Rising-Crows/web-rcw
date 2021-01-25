@@ -1,0 +1,62 @@
+html {
+	font-size: 15pt;
+    background-color: black;
+}
+
+body {
+    background-image: url('/assets/img/background-particles.png');
+    background-size: cover;
+    color: white;
+    font-family: 'Roboto';
+}
+
+#logo {
+    width: 25em;
+}
+
+ul {
+    padding: 0px;
+}
+
+#streamers li {
+    list-style-type: none;
+    margin-top: 1em;
+    margin-bottom: 1em;   
+    border-color: white;
+    border-style: solid;
+    border-width: 1px;
+    max-width: 30em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#streamers li a {
+    color: white;
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#streamers li a:hover {
+    color: black;
+    text-decoration: none;
+    background-color: white;
+}
+
+#letras-escudo {
+    height: 3em;
+}
+
+h1 {
+    font-family: 'Robotech GP';
+    color: #ca62c2;
+    font-size: 3em;
+}
+
+@font-face {
+    font-family: 'Robotech GP';
+    src: url('/assets/font/robotech-gp.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  
