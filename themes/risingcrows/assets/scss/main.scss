@@ -59,4 +59,52 @@ h1 {
     font-weight: normal;
     font-style: normal;
 }
-  
+
+i.icon {
+    margin: 0.5em;
+}
+
+i.icon:before {
+    content: '';
+    display: inline-block;
+    background-size: 1.5em 1.5em;
+    background-repeat: no-repeat;
+    width: 1.5em; 
+    height: 1.5em;
+    background-color: transparent;
+    filter: invert(100%);
+}
+
+i.icon.icon-youtube:before {
+    background-image: url('/assets/img/social-icons/icon-youtube.png');
+}
+
+i.icon.icon-twitch:before {
+    background-image: url('/assets/img/social-icons/icon-twitch.png');
+}
+
+i.icon.icon-discord:before {
+    background-image: url('/assets/img/social-icons/icon-discord.png');
+}
+
+i.icon.icon-twitter:before {
+    background-image: url('/assets/img/social-icons/icon-twitter.png');
+}
+
+i.icon.icon-facebook:before {
+    background-image: url('/assets/img/social-icons/icon-facebook.png');
+}
+
+i.icon.icon-instagram:before {
+    background-image: url('/assets/img/social-icons/icon-instagram.png');
+}
+
+.streamer-list .streamer {
+    margin: 1em;
+}
+
+h3.streamer-name {
+    display: inline-block;
+    margin-right: 1em;
+    font-size: 16pt;
+}
