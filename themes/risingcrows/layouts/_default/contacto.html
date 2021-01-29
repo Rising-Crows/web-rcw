@@ -1,0 +1,45 @@
+{{ define "nav-items" }}
+<li class="nav-item">
+  <a class="nav-link" href="/">Home</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/lol">League of Legends</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/logros">Logros</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/crowscrew">Crows Crew</a>
+</li>
+<li class="nav-item active">
+  <a class="nav-link" href="/contacto">Contacto <span class="sr-only">(current)</span></a>
+</li>
+{{ end }}
+
+{{ define "main" }}
+<div class="container">
+  <div class="justify-content-center align-items-center text-center">
+    <img id="logo" src="/assets/img/rising-crows.png" />
+  </div>
+  <div class="justify-content-center align-items-center text-center mt-4 mb-4">
+    <h1>Contacto</h1>
+  </div>
+  <div class="justify-content-center align-items-center text-center mt-4 mb-4">
+    <p>
+      Si quieres ponerte en contacto con el staff del club, rellena este formulario y te responderemos lo antes posible.
+    </p>
+    <form action="https://formspree.io/f/mdopjnke" method="POST">
+      <div class="form-group">
+        <label for="exampleInputEmail1">Tu email</label>
+        <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Tu email">
+        <small id="emailHelp" class="form-text text-muted">Nunca compartiremos tu dirección de email con nadie.</small>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputMessage1">Mensaje</label>
+        <textarea name="message" class="form-control" id="exampleInputMessage1" placeholder="Mensaje" rows="3"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+  </div>
+</div>
+{{ end }}
