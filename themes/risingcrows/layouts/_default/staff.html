@@ -1,24 +1,27 @@
 {{ define "main" }}
-<div class="container">
-  <div class="justify-content-center align-items-center text-center">
-    <img id="logo" src="/assets/img/rising-crows.png" />
-  </div>
-  <div class="justify-content-center align-items-center text-center mt-4 mb-4">
-    <h1>Staff</h1>
-  </div>
-</div>
+{{- partial "hero.html" . -}}
 
-<div class="container">
-  <p>Actualmente buscamos cubrir las siguientes posiciones:</p>
-  <ul>
-    <li>Diseñador gráfico</li>
-    <li>Editor de vídeo (YouTube)</li>
-    <li>Casters</li>
-    <li>Realizador (streaming partidos de competición)</li>
-    <li>Jugadores suplentes (ELO platino/diamante)</li>
-    <li>Manager juegos alternativos (Fortnite, FIFA, Valorant, Rocket League)</li>
-  </ul>
-  <p>¿Te interesa aplicar para alguna de estas posiciones? ¿Quieres colaborar con nosotros pero tu area de expertise no está en la lista? En cualquier caso, envíanos tu candidatura en el siguiente formulario:</p>
-  <p><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdDG5DE0t0Aiu4fAp1xb9bCMqAPTqL6Nk_2ZOCv08_BaMuxlQ/viewform?usp=sf_link" class="btn btn-primary">Enviar mi candidatura al staff</a></p>
-</div>
+<section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" >
+  <div class="container">
+    <p>
+      Actualmente buscamos cubrir las siguientes posiciones:
+      <ul>
+        <li>Stream Manager</li>
+        <li>Community Manager</li>
+        <li>Diseñador gráfico</li>
+        <li>Editor de vídeo (YouTube)</li>
+        <li>Casters</li>
+        <li>Realizador (streaming partidos de competición)</li>
+        <li>Jugadores suplentes (ELO platino/diamante)</li>
+        <li>Manager juegos alternativos (Fortnite, FIFA, Valorant, Rocket League)</li>
+      </ul>
+    </p>
+    <p>
+      ¿Te interesa aplicar para alguna de estas posiciones? ¿Quieres colaborar con nosotros pero tu area de expertise no está en la lista? En cualquier caso, envíanos tu candidatura en el siguiente formulario:
+    </p>
+    <p>
+      <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdDG5DE0t0Aiu4fAp1xb9bCMqAPTqL6Nk_2ZOCv08_BaMuxlQ/viewform?usp=sf_link" class="btn btn-primary">Enviar mi candidatura al staff</a>
+    </p>
+  </div>
+</section>
 {{ end }}
