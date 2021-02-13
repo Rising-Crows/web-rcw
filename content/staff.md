@@ -11,6 +11,7 @@ members:
   twitter: RCWSemer
 - name: Ángel Núñez "Gogeta"
   position: Manager LoL
+  avatar: /assets/img/staff/gogeta.png
   twitch: mvp_gogeta
   twitter: GogetaMvp
   youtube: UC1_ikF9nDXdOqyUF-OR_xDw
