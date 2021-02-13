@@ -1,0 +1,12 @@
+{{ define "main" }}
+{{- partial "hero.html" . -}}
+
+<section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" >
+  <div class="container">
+    {{ .Content }}
+    <p>
+      <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdDG5DE0t0Aiu4fAp1xb9bCMqAPTqL6Nk_2ZOCv08_BaMuxlQ/viewform?usp=sf_link" class="btn btn-primary">Aplicar a esta posición</a>
+    </p>
+  </div>
+</section>
+{{ end }}
