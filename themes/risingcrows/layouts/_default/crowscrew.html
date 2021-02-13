@@ -4,44 +4,26 @@
 <div class="container">
   <div class="justify-content-center align-items-center text-center">   
     <div class="streamer-list">
+      {{ range .Params.streamers }}
       <div class="streamer">
-        <h3 class="streamer-name">SoloQTilted</h3>
-        <a target="_blank" href="http://twitch.tv/Soloqtilted"><i class="icon icon-twitch"></i></a>
-        <a target="_blank" href="https://www.youtube.com/channel/UC6sVLdUhGIwogL7YaptY8tg"><i class="icon icon-youtube"></i></a>
-        <a target="_blank" href="https://www.instagram.com/soloqtilted/"><i class="icon icon-instagram"></i></a>
-        <a target="_blank" href="https://discord.gg/Vj5uhCnCA3"><i class="icon icon-discord"></i></a>
+        <h3 class="streamer-name">{{ .name }}</h3>
+        {{ if isset . "twitch" }}
+        <a target="_blank" href="http://twitch.tv/{{ .twitch }}"><i class="icon icon-twitch"></i></a>
+        {{ end }}
+        {{ if isset . "twitter" }}
+        <a target="_blank" href="https://twitter.com/{{ .twitter }}"><i class="icon icon-twitter"></i></a>
+        {{ end }}
+        {{ if isset . "youtube" }}
+        <a target="_blank" href="https://www.youtube.com/channel/{{ .youtube }}"><i class="icon icon-youtube"></i></a>
+        {{ end }}
+        {{ if isset . "instagram" }}
+        <a target="_blank" href="https://www.instagram.com/{{ .instagram }}"><i class="icon icon-instagram"></i></a>
+        {{ end }}
+        {{ if isset . "discord" }}
+        <a target="_blank" href="{{ .discord }}"><i class="icon icon-discord"></i></a>
+        {{ end }}
       </div>
-      <div class="streamer">
-        <h3 class="streamer-name">Zenitochi</h3>
-        <a target="_blank" href="http://twitch.tv/zenitochi"><i class="icon icon-twitch"></i></a>
-        <a target="_blank" href="https://twitter.com/Zenitochi"><i class="icon icon-twitter"></i></a>
-        <a target="_blank" href="https://www.instagram.com/zenitochi"><i class="icon icon-instagram"></i></a>
-        <a target="_blank" href="https://discord.gg/EhCReY2"><i class="icon icon-discord"></i></a>
-      </div>
-      <div class="streamer">
-        <h3 class="streamer-name">MVP Gogeta</h3>
-        <a target="_blank" href="http://www.twitch.tv/mvp_gogeta"><i class="icon icon-twitch"></i></a>
-        <a target="_blank" href="https://twitter.com/GogetaMvp"><i class="icon icon-twitter"></i></a>
-        <a target="_blank" href="https://www.youtube.com/channel/UC1_ikF9nDXdOqyUF-OR_xDw"><i class="icon icon-youtube"></i></a>
-        <a target="_blank" href="https://discord.gg/n3AMBtm2Gc"><i class="icon icon-discord"></i></a>
-      </div>
-      <div class="streamer">
-        <h3 class="streamer-name">RocketH14</h3>
-        <a target="_blank" href="http://twitch.tv/rocketh14"><i class="icon icon-twitch"></i></a>
-        <a target="_blank" href="https://twitter.com/Rocket1413"><i class="icon icon-twitter"></i></a>
-        <a target="_blank" href="https://www.youtube.com/channel/UC4H_ngRgEAn7XCfR8vZLk8A"><i class="icon icon-youtube"></i></a>
-        <a target="_blank" href="https://www.instagram.com/hector.m_04"><i class="icon icon-instagram"></i></a>
-      </div>
-      <div class="streamer">
-        <h3 class="streamer-name">ZZviente0</h3>
-        <a target="_blank" href="https://www.twitch.tv/zzviente0"><i class="icon icon-twitch"></i></a>
-        <a target="_blank" href="https://twitter.com/zviente"><i class="icon icon-twitter"></i></a>
-        <a target="_blank" href="https://www.instagram.com/feixaas_cml/"><i class="icon icon-instagram"></i></a>
-      </div>
-      <div class="streamer">
-        <h3 class="streamer-name">lokoambk05</h3>
-        <a target="_blank" href="https://www.twitch.tv/lokoambk05"><i class="icon icon-twitch"></i></a>
-      </div>
+      {{ end }}
     </div>
   </div>
 </div>
