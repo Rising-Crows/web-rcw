@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{- partial "hero.html" . -}}
+
+<section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" >
+  <div class="container">
+    <p>
+      Actualmente buscamos cubrir las siguientes posiciones:
+      <div class="list-group jobs">
+        {{ range .Params.jobs }}
+        <div class="mb-3">
+          {{ if isset . "link" }}
+          <a class="list-group-item list-group-item-action list-group-item-dark" href="{{ .link }}">{{ .title }}</a>
+          {{ else }}
+          <a class="list-group-item list-group-item-action list-group-item-dark disabled">{{ .title }}</a>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </p>
+    <p>
+      ¿Te interesa aplicar para alguna de estas posiciones? ¿Quieres colaborar con nosotros pero tu area de expertise no está en la lista? En cualquier caso, envíanos tu candidatura en el siguiente formulario:
+    </p>
+    <p>
+      <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdDG5DE0t0Aiu4fAp1xb9bCMqAPTqL6Nk_2ZOCv08_BaMuxlQ/viewform?usp=sf_link" class="btn btn-primary">Enviar mi candidatura al staff</a>
+    </p>
+  </div>
+</section>
+{{ end }}

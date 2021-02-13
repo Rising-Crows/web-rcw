@@ -1,0 +1,39 @@
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="/"><img id="letras-escudo" src="/assets/img/letras-escudo.png"/></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          {{- block "nav-items" . }}
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEquipos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Equipos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownEquipos">
+              <a class="dropdown-item" href="/lol">League of Legends</a>
+              <a class="dropdown-item" href="/crowscrew">Crows Crew</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/logros">Logros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/staff">Staff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/unete">Únete</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contacto">Contacto</a>
+          </li>
+          {{- end }}
+        </ul>
+      </div>
+    </div>
+  </nav>

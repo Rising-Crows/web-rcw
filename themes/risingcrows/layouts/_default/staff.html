@@ -3,8 +3,6 @@
 
 <section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" >
   <div class="container">
-    <h2>Conoce al equipo directivo</h2>
-
     <div class="row">
       {{ range .Params.members }}
       <div class="staff-member col-xs-6 col-sm-4 col-md-3 i mb-3">
@@ -14,8 +12,10 @@
           {{ else }}
           <img src="/assets/img/staff/dummy.jpg" width="270" height="270" class="img-responsive">
           {{ end }}
-          <h3 class="name">{{ .name }}</h3>
-          <h4 class="position">{{ .position }}</h4>
+          <div class="mt-3 mb-3">
+            <h3 class="name">{{ .name }}</h3>
+            <h4 class="position">{{ .position }}</h4>
+          </div>
           <div>
             {{ if isset . "twitch" }}
             <a target="_blank" href="http://twitch.tv/{{ .twitch }}"><i class="icon icon-twitch"></i></a>
@@ -37,31 +37,6 @@
       </div>
       {{ end }}
     </div>
-  </div>
-</section>
-
-<section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" >
-  <div class="container">
-    <h2>Unete al equipo</h2>
-    <p>
-      Actualmente buscamos cubrir las siguientes posiciones:
-      <ul>
-        <li><a href="/careers/stream-manager">Stream Manager</a></li>
-        <li>Community Manager</li>
-        <li>Editor de vídeo (YouTube)</li>
-        <li>Casters</li>
-        <li>Director Audiovisual</li>
-        <li>Realizador (streaming partidos de competición)</li>
-        <li>Jugadores suplentes (ELO platino/diamante)</li>
-        <li>Manager juegos alternativos (Fortnite, FIFA, Valorant, Rocket League)</li>
-      </ul>
-    </p>
-    <p>
-      ¿Te interesa aplicar para alguna de estas posiciones? ¿Quieres colaborar con nosotros pero tu area de expertise no está en la lista? En cualquier caso, envíanos tu candidatura en el siguiente formulario:
-    </p>
-    <p>
-      <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdDG5DE0t0Aiu4fAp1xb9bCMqAPTqL6Nk_2ZOCv08_BaMuxlQ/viewform?usp=sf_link" class="btn btn-primary">Enviar mi candidatura al staff</a>
-    </p>
   </div>
 </section>
 {{ end }}
