@@ -7,6 +7,7 @@ jobs:
 - title: Stream Manager
   link: /jobs/stream-manager
 - title: Community Manager
+  link: /jobs/community-manager
 - title: Editor de vídeo (YouTube)
 - title: Caster
 - title: Director Audiovisual
