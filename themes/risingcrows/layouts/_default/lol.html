@@ -5,11 +5,9 @@
   <div class="container">
     <div class="justify-content-center align-items-center text-center">   
       <ul id="streamers">
-        <li><a target="_blank" href="https://euw.op.gg/summoner/userName=rcw+zenitochi">Zenitochi (top)</a></li>
-        <li><a target="_blank" href="https://euw.op.gg/summoner/userName=RCW%20ZZviente0">ZZviente0 (jungle)</a></li>
-        <li><a target="_blank" href="https://euw.op.gg/summoner/userName=rcw+motorrabo">Motorrabo (mid)</a></li>
-        <li><a target="_blank" href="https://euw.op.gg/summoner/userName=rcw+stoned">StoneD (adc)</a></li>
-        <li><a target="_blank" href="https://euw.op.gg/summoner/userName=RCW+Kappa">Kappa (support)</a></li>
+        {{ range .Params.players }}
+        <li><a target="_blank" href="{{ .opgg }}">{{ .name }} ({{ .position }})</a></li>
+        {{ end }}
       </ul>
     </div>
   </div>
