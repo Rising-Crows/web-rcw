@@ -1,30 +1,47 @@
 {{ define "main" }}
 {{- partial "hero.html" . -}}
 
-<div class="container">
-  <div class="justify-content-center align-items-center text-center">   
-    <div class="streamer-list">
+<section class="pt-5 mt-0 align-items-center d-flex bg-dark" >
+  <div class="container">
+    <p>
+      Hemos creado la Crows Crew, un equipo de creadores de contenido formado para ayudaros a combatir el aburrimiento de nuestros fans con miles de horas de entretenimiento.
+    </p>
+  </div>
+</section>
+
+<section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" >
+  <div class="container">
+    <div class="row">
       {{ range .Params.streamers }}
-      <div class="streamer">
-        <h3 class="streamer-name">{{ .name }}</h3>
-        {{ if isset . "twitch" }}
-        <a target="_blank" href="http://twitch.tv/{{ .twitch }}"><i class="icon icon-twitch"></i></a>
-        {{ end }}
-        {{ if isset . "twitter" }}
-        <a target="_blank" href="https://twitter.com/{{ .twitter }}"><i class="icon icon-twitter"></i></a>
-        {{ end }}
-        {{ if isset . "youtube" }}
-        <a target="_blank" href="https://www.youtube.com/channel/{{ .youtube }}"><i class="icon icon-youtube"></i></a>
-        {{ end }}
-        {{ if isset . "instagram" }}
-        <a target="_blank" href="https://www.instagram.com/{{ .instagram }}"><i class="icon icon-instagram"></i></a>
-        {{ end }}
-        {{ if isset . "discord" }}
-        <a target="_blank" href="{{ .discord }}"><i class="icon icon-discord"></i></a>
-        {{ end }}
+      <div class="staff-member col-xs-6 col-sm-4 col-md-3 i mb-3">
+        <div class="text-center">
+          {{ if isset . "avatar" }}
+          <img src="{{ .avatar }}" width="270" height="270" class="img-responsive">
+          {{ else }}
+          <img src="/assets/img/staff/dummy.jpg" width="270" height="270" class="img-responsive">
+          {{ end }}
+          <div class="mt-3 mb-3">
+            <h3 class="name">{{ .name }}</h3>
+          </div>
+          {{ if isset . "twitch" }}
+          <a target="_blank" href="http://twitch.tv/{{ .twitch }}"><i class="icon icon-twitch"></i></a>
+          {{ end }}
+          {{ if isset . "twitter" }}
+          <a target="_blank" href="https://twitter.com/{{ .twitter }}"><i class="icon icon-twitter"></i></a>
+          {{ end }}
+          {{ if isset . "youtube" }}
+          <a target="_blank" href="https://www.youtube.com/channel/{{ .youtube }}"><i class="icon icon-youtube"></i></a>
+          {{ end }}
+          {{ if isset . "instagram" }}
+          <a target="_blank" href="https://www.instagram.com/{{ .instagram }}"><i class="icon icon-instagram"></i></a>
+          {{ end }}
+          {{ if isset . "discord" }}
+          <a target="_blank" href="{{ .discord }}"><i class="icon icon-discord"></i></a>
+          {{ end }}
+        </div>
       </div>
       {{ end }}
     </div>
   </div>
-</div>
+</section>
 {{ end }}
