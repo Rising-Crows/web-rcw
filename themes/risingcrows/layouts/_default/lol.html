@@ -1,14 +1,40 @@
 {{ define "main" }}
 {{- partial "hero.html" . -}}
 
+<section class="pt-5 mt-0 align-items-center d-flex bg-dark" >
+  <div class="container">
+    <p>
+      El objetivo de nuestra squad de League of Legends colocarse entre los mejores equipos del circuito amateur Español, compitiendo en ligas como CDA, RPLeague y las paradas del Circuito Tormenta de la temporada 2021.
+    </p>
+  </div>
+</section>
+
 <section class="pt-5 pb-5 mt-0 align-items-center d-flex bg-dark" >
   <div class="container">
-    <div class="justify-content-center align-items-center text-center">   
-      <ul id="streamers">
-        {{ range .Params.players }}
-        <li><a target="_blank" href="{{ .opgg }}">{{ .name }} ({{ .position }})</a></li>
-        {{ end }}
-      </ul>
+    <div class="row">
+      {{ range .Params.players }}
+      <div class="staff-member col-xs-6 col-sm-4 col-md-3 i mb-3">
+        <div class="text-center">
+          {{ if isset . "avatar" }}
+          <img src="{{ .avatar }}" width="270" height="270" class="img-responsive">
+          {{ else }}
+          <img src="/assets/img/staff/dummy.jpg" width="270" height="270" class="img-responsive">
+          {{ end }}
+          <div class="mt-3 mb-3">
+            <h3 class="name">{{ .name }}</h3>
+            <h4 class="position">{{ .position }}</h4>
+          </div>
+          <div>
+            {{ if isset . "opgg" }}
+            <a target="_blank" href="https://euw.op.gg/summoner/userName={{ .opgg }}"><i class="icon icon-opgg"></i></a>
+            {{ end }}
+            {{ if isset . "twitter" }}
+            <a target="_blank" href="https://twitter.com/{{ .twitter }}"><i class="icon icon-twitter"></i></a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+      {{ end }}
     </div>
   </div>
 </section>

@@ -5,18 +5,27 @@ date: 2021-01-24T10:54:41+00:00
 layout: lol
 players:
 - name: Zenitochi
-  position: top
-  opgg: https://euw.op.gg/summoner/userName=rcw+zenitochi
+  position: Top Laner
+  opgg: rcw+zenitochi
+  twitter: Zenitochi
+  avatar: /assets/img/teamlol/zeni.jpeg
 - name: ZZviente0
-  position: jungle
-  opgg: https://euw.op.gg/summoner/userName=RCW%20ZZviente0
+  position: Jungler
+  opgg: RCW%20ZZviente0
+  twitter: zviente
+  avatar: /assets/img/teamlol/feixas.jpeg
 - name: Motorrabo
-  position: mid
-  opgg: https://euw.op.gg/summoner/userName=rcw+motorrabo
+  position: Mid Laner
+  opgg: rcw+motorrabo
+  avatar: /assets/img/teamlol/moto.jpeg
 - name: StoneD
-  position: adc
-  opgg: https://euw.op.gg/summoner/userName=rcw+stoned
+  position: ADCarry
+  opgg: rcw+stoned
+  twitter: jorgepiedras4
+  avatar: /assets/img/teamlol/piedras.jpeg
 - name: Kappa
-  position: support
-  opgg: https://euw.op.gg/summoner/userName=RCW+Kappa
+  position: Support
+  opgg: RCW+Kappa
+  twitter: FGRoNNeR
+  avatar: /assets/img/teamlol/kappa.jpeg
 ---
