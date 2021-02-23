@@ -9,6 +9,7 @@ jobs:
 - title: Community Manager
   link: /jobs/community-manager
 - title: Editor de vídeo (YouTube)
+  link: /jobs/editor-de-video
 - title: Caster
 - title: Director Audiovisual
 - title: Realizador (streaming partidos de competición)
